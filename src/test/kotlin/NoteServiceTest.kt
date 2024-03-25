@@ -57,6 +57,7 @@ class NoteServiceTest {
         val service = NoteService()
         service.add("Заметка 1", "Текст заметки 1")
         service.createComment(1, "Комментарий 1")
+        service.createComment(1, "Комментарий 2")
         val result = service.deleteComment(1)
         assertEquals(result, 1)
     }
